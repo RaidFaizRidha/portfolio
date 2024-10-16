@@ -1,0 +1,877 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+/* * {
+    outline: 1px solid green;
+} */
+
+.main {
+    margin: auto;
+    overflow-x: clip;
+    max-width: 1300px;
+}
+
+/* Navbar Section start*/
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 0 0;
+}
+
+.navbar-container > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-weight: 500;
+    gap: 20px;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+
+.navbar-container a {
+    text-decoration: none;
+    color: rgb(78, 82, 90);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -4px;
+    color: black;
+}
+
+#logo-span {
+    color: rgb(93, 93, 231);
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+#current-page {
+    color: rgb(93, 93, 231);
+}
+
+.navbar-container a:hover {
+    color: rgb(93, 93, 231);
+}
+
+.navbar-container #logo:hover {
+    color: rgb(93, 93, 231);
+}
+/* Navbar section end */
+
+/* foreword section start */
+.foreword {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    margin: 0;
+}
+
+.foreword > span {
+    align-self: flex-start;
+    color: rgb(127, 132, 141);
+    margin: 0;
+}
+
+h1 {
+    font-size: 8.6rem;
+    margin: 0;
+}
+
+.highlight {
+    color: #683FEA;
+}
+/* foreword section start */
+
+.ufo-container {
+    display: inline-flex;
+    position: relative;
+    width: 270px;
+    height: 200px;
+    top: 90px;
+    left: 50px;
+}
+
+.ufo-ring {
+    border-radius: 20%;
+    width: 150px;
+    height: 20px;
+    background-color: #9488b9;
+    position: absolute;
+    bottom: -1px;
+    right: -20px;
+}
+
+.ufo-img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 110px;
+    border-radius: 150px 150px 0 0;
+    background: linear-gradient(300deg, #a3e4fa, rgb(93, 93, 231), #ef8172);
+    background-size: 180% 180%;
+    animation: ufo 5s infinite;
+    -moz-animation: ufo 5s infinite;
+    -webkit-animation: ufo 5s infinite;
+    -o-animation: ufo 5s infinite;
+}
+
+.ufo-light {
+    position: absolute;
+    border-bottom: 90px solid #673fea48;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    animation: light 5s infinite;
+    -moz-animation: light 5s infinite;
+    -webkit-animation: light 5s infinite;
+    -o-animation: light 5s infinite;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 2%);
+    z-index: -1;
+}
+
+@keyframes light {
+    0%   {top: 60px; left: 0px;}
+    25%  {top: 5px; right: 200px;}
+    50%  {top: 60px; left: 170px;}
+    75%  {top: 5px; right: 200px;}
+    100% {top: 60px; left: 0px;}
+}
+@-webkit-keyframes light {
+    0%   {top: 60px; left: 0px;}
+    25%  {top: 5px; right: 200px;}
+    50%  {top: 60px; left: 170px;}
+    75%  {top: 5px; right: 200px;}
+    100% {top: 60px; left: 0px;}
+}
+@-o-keyframes light {
+    0%   {top: 60px; left: 0px;}
+    25%  {top: 5px; right: 200px;}
+    50%  {top: 60px; left: 170px;}
+    75%  {top: 5px; right: 200px;}
+    100% {top: 60px; left: 0px;}
+}
+@-moz-keyframes light {
+    0%   {top: 60px; left: 0px;}
+    25%  {top: 5px; right: 200px;}
+    50%  {top: 60px; left: 170px;}
+    75%  {top: 5px; right: 200px;}
+    100% {top: 60px; left: 0px;}
+}
+
+@keyframes ufo {
+    0%   {left: 0px; background-position: 0% 50%;}
+    25%  {right: 200px;}
+    50%  {left: 170px; background-position: 100% 50%;}
+    75%  {right: 200px;}
+    100% {left: 0px; background-position: 0% 50%;}
+}
+@-webkit-keyframes ufo {
+    0%   {left: 0px; background-position: 0% 50%;}
+    25%  {right: 200px;}
+    50%  {left: 170px; background-position: 100% 50%;}
+    75%  {right: 200px;}
+    100% {left: 0px; background-position: 0% 50%;}
+}
+@-o-keyframes ufo {
+    0%   {left: 0px; background-position: 0% 50%;}
+    25%  {right: 200px;}
+    50%  {left: 170px; background-position: 100% 50%;}
+    75%  {right: 200px;}
+    100% {left: 0px; background-position: 0% 50%;}
+}
+@-moz-keyframes ufo {
+    0%   {left: 0px; background-position: 0% 50%;}
+    25%  {right: 200px;}
+    50%  {left: 170px; background-position: 100% 50%;}
+    75%  {right: 200px;}
+    100% {left: 0px; background-position: 0% 50%;}
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+  
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+/* github*/
+.containerTwo:hover {
+    background-color: #283b4d;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #25d366;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+  
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+  
+.socialSvg {
+    width: 17px;
+}
+  
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+  
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+    -webkit-animation: slide-in-top 0.3s both;
+    -o-animation: slide-in-top 0.3s both;
+    -moz-animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@-webkit-keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@-o-keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@-moz-keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@media (max-width: 1287px) {
+    .foreword {
+        height: 650px;
+    }
+
+    h1 {
+        font-size: 7.7rem;
+    }
+
+    .ufo-container {
+        width: 200px;
+        height: 160px;
+    }
+    
+    .ufo-ring {
+        width: 150px;
+        height: 20px;
+    }
+    
+    .ufo-img {
+        height: 80px;
+        width: 110px;
+    }
+    
+    .ufo-light {
+        width: 50px;
+    }
+}
+
+@media (max-width: 1106px) {
+    .foreword {
+        height: 600px;
+    }
+
+    .ufo-container {
+        top: 50%;
+        left: 40.5%;
+        transform: 
+        translate(0%, 0%);
+    }
+
+    @keyframes ufo {
+        0%   {left: 0px;}
+        25%  {right: 200px;}
+        50%  {left: 200px;}
+        75%  {right: 200px;}
+        100% {left: 0px;}
+    }
+    @-webkit-keyframes ufo {
+        0%   {left: 0px;}
+        25%  {right: 200px;}
+        50%  {left: 200px;}
+        75%  {right: 200px;}
+        100% {left: 0px;}
+    }
+    @-o-keyframes ufo {
+        0%   {left: 0px;}
+        25%  {right: 200px;}
+        50%  {left: 200px;}
+        75%  {right: 200px;}
+        100% {left: 0px;}
+    }
+    @-moz-keyframes ufo {
+        0%   {left: 0px;}
+        25%  {right: 200px;}
+        50%  {left: 200px;}
+        75%  {right: 200px;}
+        100% {left: 0px;}
+    }
+
+    @keyframes light {
+        0%   {top: 55px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 55px; left: 200px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 55px; left: 0px;}
+    }
+    @-webkit-keyframes light {
+        0%   {top: 55px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 55px; left: 200px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 55px; left: 0px;}
+    }
+    @-o-keyframes light {
+        0%   {top: 55px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 55px; left: 200px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 55px; left: 0px;}
+    }
+    @-moz-keyframes light {
+        0%   {top: 55px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 55px; left: 200px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 55px; left: 0px;}
+    }
+}
+
+/* profile section start */
+.profile-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: 140px 0 70px 0;
+}
+
+.profile-framer {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50%;
+}
+
+h2 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.profile-title {
+    margin-top: 0;
+}
+
+.profile {
+    font-family: "Inter", sans-serif;
+    color: rgb(103, 103, 104);
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    text-indent: 2em;
+}
+
+.profile-photo {
+    margin: 70px 5px 0 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(300deg,  #a3e4fa, #683FEA, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    -webkit-animation:  gradient-animation 5s ease infinite;
+    -o-animation:  gradient-animation 5s ease infinite;
+    -moz-animation:  gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+@-moz-keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+@-o-keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.profile-photo > img{
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+}
+
+.btn-profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 30px 0 30px;
+    height: 100%;
+}
+
+.btn-contact {
+    margin-right: 2.5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.4s;
+    border: 2px solid #683FEA;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #683FEA;
+    color: white;
+}
+
+.btn-contact:hover {
+    background-color: rgb(113, 113, 230);
+    color: white;
+    border: 2px solid rgb(113, 113, 230);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+.btn-projects {
+    margin-left: 2.5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.4s;
+    border: 2px solid #683FEA;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: transparent;
+    color: #683FEA;
+}
+
+.btn-projects:hover {
+    background-color: rgb(113, 113, 230);
+    color: white;
+    border: 2px solid rgb(113, 113, 230);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+#animated-text-strip {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: clip;
+    margin: 0;
+}
+
+#animated-text-strip .projects-text {
+    white-space: nowrap;
+    animation: projects-title 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    max-width: none;
+}
+
+@keyframes projects-title {
+    0% {
+        -webkit-transform: translate(0, 0);
+      }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+    }
+  }
+
+#animated-text-strip {
+    padding: 1rem 0;
+}
+
+.projects-text {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: black;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 70px;
+    gap: 15px;
+}
+
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0 5px 5px rgb(211, 211, 211);
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    background-color: #00000054;
+    width: 100%;
+    height: 100%; 
+    text-align: start;    
+}
+
+.project-title {
+    position: relative;
+    border-bottom: 1px solid white;
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.project-title:hover {
+    font-size: 5rem;
+    border-bottom: 3px solid white;
+}
+
+.projects-order {
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+}
+
+.skills-container {
+    width: 100%;
+    margin: 70px 0 70px 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.skill ul {
+    font-family: "Inter", sans-serif;
+    color: rgb(103, 103, 104);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    padding-left: 30px;
+}
+
+hr {
+    max-width: 1200px;
+}
+
+.contact {
+    margin: 70px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact span {
+    display: inline;
+    color: rgb(103, 103, 104);
+}
+
+.contact-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.btn-contact-framer {
+    text-align: center;
+}
+
+.btn-contact-bottom {
+    margin-left: 2.5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.4s;
+    border: 2px solid #683FEA;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: transparent;
+    color: #683FEA;
+    text-align: center;
+}
+
+.btn-contact-bottom:hover {
+    background-color: rgb(113, 113, 230);
+    color: white;
+    border: 2px solid rgb(113, 113, 230);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 35px;
+}
+
+#footer-logo-container a {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: -5px;
+}
+
+#footer-logo-container a:hover {
+    color: rgb(93, 93, 231);
+}
+
+#footer-logo-container {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#logo-desc-footer span {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(139, 139, 139);
+    padding: 0;
+    font-weight: 400;
+    top: 4px;
+    left: 80px;
+}
+
+#address {
+    display: flex;
+    text-align: start;
+    align-items: center;
+}
+
+#address span {
+    height: 26px;
+    color: rgb(139, 139, 139);
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media (max-width: 901px) {
+    .foreword {
+        height: 580px;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    .ufo-ring {
+        width: 120px;
+        height: 15px;
+    }
+    
+    .ufo-img {
+        height: 65px;
+        width: 80px;
+    }
+    
+    .ufo-light {
+        border-bottom: 85px solid #673fea48;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        height: 0;
+        width: 35px;
+    }
+
+    @keyframes ufo {
+        0%   {left: 0px; background-position: 0% 50%;}
+        50%  {left: 170px; background-position: 100% 50%;}
+        75%  {right: 200px;}
+        100% {left: 0px; background-position: 0% 50%;}
+    }
+    @-webkit-keyframes ufo {
+        0%   {left: 0px; background-position: 0% 50%;}
+        25%  {right: 200px;}
+        50%  {left: 170px; background-position: 100% 50%;}
+        75%  {right: 200px;}
+        100% {left: 0px; background-position: 0% 50%;}
+    }
+    @-o-keyframes ufo {
+        0%   {left: 0px; background-position: 0% 50%;}
+        25%  {right: 200px;}
+        50%  {left: 170px; background-position: 100% 50%;}
+        75%  {right: 200px;}
+        100% {left: 0px; background-position: 0% 50%;}
+    }
+    @-moz-keyframes ufo {
+        0%   {left: 0px; background-position: 0% 50%;}
+        25%  {right: 200px;}
+        50%  {left: 170px; background-position: 100% 50%;}
+        75%  {right: 200px;}
+        100% {left: 0px; background-position: 0% 50%;}
+    }
+
+    @keyframes light {
+        0%   {top: 60px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 60px; left: 170px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 60px; left: 0px;}
+    }
+    @-webkit-keyframes light {
+        0%   {top: 60px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 60px; left: 170px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 60px; left: 0px;}
+    }
+    @-o-keyframes light {
+        0%   {top: 60px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 60px; left: 170px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 60px; left: 0px;}
+    }
+    @-moz-keyframes light {
+        0%   {top: 60px; left: 0px;}
+        25%  {top: 5px; right: 200px;}
+        50%  {top: 60px; left: 170px;}
+        75%  {top: 5px; right: 200px;}
+        100% {top: 60px; left: 0px;}
+    }
+}
