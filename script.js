@@ -8,14 +8,14 @@ $(".simon-game").mouseleave(function () {
     $(".simon-game img").attr("src", "./assets/simon-game.png");
 }).mouseleave();
 
-$(".tindog img").mouseenter(function () {
-    $(".tindog .description").show();
-    $(".tindog img").attr("src", "./assets/tindog.gif");
+$(".greener img").mouseenter(function () {
+    $(".greener .description").show();
+    $(".greener img").attr("src", "./assets/greener.gif");
 });
 
-$(".tindog").mouseleave(function () {
-    $(".tindog .description").hide();
-    $(".tindog img").attr("src", "./assets/tindog.png");
+$(".greener").mouseleave(function () {
+    $(".greener .description").hide();
+    $(".greener img").attr("src", "./assets/greener.png");
 }).mouseleave();
 
 $(".drum-kit img").mouseenter(function () {
