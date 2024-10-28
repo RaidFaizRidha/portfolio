@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar-container">
+            <a class="logo" href="../index.html">R<span id="logo-span">F</span>R...........</a>
+            <ul>
+                <li class="navbar-menu"><a href="../index.html">Home</a></li>
+                <li class="navbar-menu"><a id="current-page" href="./projects.html">Projects</a></li>
+                <li class="navbar-menu"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="contact-icon"><a href="./contact.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                    <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                </svg></a>
+            </div>
+        </nav>
+
+        <nav class="navbar-dropdown">
+            <a class="logo" href="../index.html">R<span id="logo-span">F</span>R...........</a>
+            <div class="dropdown">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </span>
+                <div class="dropdown-content">
+                    <li class="navbar-menu"><a href="../index.html">Home</a></li>
+                    <li class="navbar-menu"><a id="current-page" href="./projects.html">Projects</a></li>
+                    <li class="navbar-menu"><a href="./contact.html">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <div class="foreword-container">
+            <div class="foreword">
+                <h1>My Latest <br /><span class="highlight">Creation</span>.</h1>
+                <span>Designing and Developing Stylish Website</span>
+            </div>
+            <div class="project-design-img">
+                <div class="project-link project1"><a href="#project1"><img src="../assets/drum-kit.png" alt="drum-kit"></a></div>
+                <div class="project-link project2"><a href="#project2"><img src="../assets/greener.png" alt="greener"></a></div>
+                <div class="project-link project3"><a href="#project3"><img src="../assets/simon-game.png" alt="simon-game"></a></div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="projects-container">
+            <h2>Projects<span class="highlight">.</span></h2>
+            <div class="project" id="project1">
+                <div class="project-inner">
+                    <div class="project-front" id="drum-kit">
+                        <img src="../assets/drum-kit.png" alt="drum-kit" height="200">
+                    </div>
+                    <div class="project-back">
+                        <h3>Drum Kit</h3>
+                        <p>A Drum Kit website lets users play virtual drums by clicking on drum images or pressing keys on their keyboard. Each drum sound is linked to a specific key, allowing users to create beats and rhythms interactively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project" id="project2">
+                <div class="project-inner">
+                    <div class="project-front" id="greener">
+                        <img src="../assets/greener.png" alt="greener" height="200">
+                    </div>
+                    <div class="project-back">
+                        <h3>Greener</h3>
+                        <p>The app lets users easily share and organize plans with others. You can invite friends, update progress, and get real-time notifications, making it easy for everyone to stay on track together.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project" id="project3">
+                <div class="project-inner">
+                    <div class="project-front" id="simon-game">
+                        <img src="../assets/simon-game.png" alt="simon-game" height="200">
+                    </div>
+                    <div class="project-back">
+                        <h3>Simon Game</h3>
+                        <p>The Simon Game is a memory challenge where players repeat sequences of lights and sounds from four colored buttons. Each round adds a new step to the sequence, testing memory and focus.</p>
+                    </div>
+                </div>
+            </div>                                    
+            <!-- Add more projects as needed -->
+        </div>
+
+        <hr />
+
+        <div class="contact-footer">
+            <span>Want to start a project?</span>
+            <h2 class="contact-title-footer">Let's Talk</h2>
+            <div class="btn-contact-framer">
+                <a href="./contact.html"><button id="btn-contact-bottom">
+                    Contact Us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    </button>
+                </a>
+            </div>   
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div id="footer-logo-container">
+                    <div id="logo-desc-footer">
+                        <span>
+                            Front-end
+                        <br/>
+                            Developer
+                        </span>
+                    </div>
+                    <a class="logo" href="../index.html">R<span id="logo-span">F</span>R...........</a>
+                </div>
+                <div id="address">
+                    <span>
+                        raidfairidha09@gmail.com
+                        <br>
+                        Batam City, Riau Islands, Indonesia
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="projects.js"></script>
+</body>
+</html>
